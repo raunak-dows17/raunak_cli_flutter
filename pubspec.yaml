@@ -1,6 +1,6 @@
 name: raunak_cli
 description: A Dart CLI to generate Flutter projects with a clean architecture setup, folder structure, and essential boilerplate.
-version: 1.0.1
+version: 1.0.1+1
 
 repository:  https://github.com/raunak-dows17/raunak_cli_flutter.git
 
@@ -16,4 +16,4 @@ dev_dependencies:
   test: ^1.26.2
 
 executables:
-  raunak: raunak
+  raunak-cli: raunak
