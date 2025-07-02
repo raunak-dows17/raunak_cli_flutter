@@ -10,7 +10,7 @@ A powerful CLI tool to scaffold production-ready **Clean Architecture** Flutter 
 ### 🔹 `dart pub global activate raunak_cli`
 - Activate the CLI globally from [pub.dev](https://pub.dev/packages/raunak_cli)
 
-### 🔹 `raunak init <project_name>`
+### 🔹 `raunak-cli init <project_name>`
 - Creates a Flutter project using `flutter create`
 - Generates a scalable Clean Architecture folder structure
 - Prompts you for:
@@ -65,7 +65,7 @@ main.dart
 dart pub global activate raunak_cli
 
 # Create a new clean Flutter project
-raunak init my_app
+raunak-cli init my_app
 ````
 
 ### During Setup:
@@ -93,7 +93,6 @@ You can also input additional dependencies during setup.
 * `generate:feature <name>` – Create a feature module (Domain, Data, and Presentation layers)
 * `generate:model <name>` – Scaffold domain entities and data models
 * `init --with-auth` – Bootstrap login/signup and auth flow
-* `init --with-supabase` – Setup Supabase backend integration
 
 ---
 
