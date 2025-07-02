@@ -1,3 +1,4 @@
+
 # 🛠️ Raunak CLI Dart – Flutter Clean Architecture Generator
 
 A powerful CLI tool to scaffold production-ready **Clean Architecture** Flutter projects using layered architecture and opinionated best practices.
@@ -5,70 +6,103 @@ A powerful CLI tool to scaffold production-ready **Clean Architecture** Flutter 
 ---
 
 ## 🚀 Features
-- `dart pub global activate raunak_cli`:
-    - Activate me globally
 
+### 🔹 `dart pub global activate raunak_cli`
+- Activate the CLI globally from [pub.dev](https://pub.dev/packages/raunak_cli)
 
-- `dart run raw_cli_dart.dart init <project_name>`:
-    - Creates a Flutter project with `flutter create`
-    - Generates a scalable Clean Architecture folder structure
-    - Prompts for:
-        - Primary theme color
-        - Network client: `dio`, `http`, or none
-    - Adds and installs essential dependencies:
-        - `dio`, `google_fonts`, `flutter_dotenv`, `flutter_secure_storage`, `go_router`
+### 🔹 `raunak init <project_name>`
+- Creates a Flutter project using `flutter create`
+- Generates a scalable Clean Architecture folder structure
+- Prompts you for:
+  - 🎨 Primary theme color (default: `0xFF2196F3`)
+  - 🌐 Network client: `dio`, `http`, or `none`
+- Adds and installs essential dependencies:
+  - `dio`, `google_fonts`, `flutter_dotenv`, `flutter_secure_storage`, `go_router`
 
-- Generates boilerplate for:
-    - `main.dart` entry
-    - `AppTheme` for light/dark mode
-    - `API Client` (if network is enabled)
-    - Routing (`app_routes.dart`, `navigate.dart`)
-    - Local storage wrapper (`local_storage.dart`)
-    - Environment config (`env.config.dart`)
-    - Constants and API endpoints
-    - Token management
+---
+
+## 📁 Generated Structure
+
+```
+
+lib/
+├── config/
+│   ├── theme/
+│   │   └── app\_theme.dart
+│   ├── routes/
+│   │   ├── app\_routes.dart
+│   │   └── navigate.dart
+│   ├── env/
+│   │   └── env.config.dart
+│   └── storage/
+│       └── local_storage.dart
+├── core/
+│   ├── entities/
+│   ├── models/
+│   ├── usecases/
+│   ├── datasources/
+│   │   ├── local/
+│   │   │   └── user\_token.dart
+│   │   └── remote/
+│   │       └── api\_client.dart
+│   ├── utils/constants/
+│   │   └── api\_endpoints.dart
+│   └── error/
+└── features/
+main.dart
+.env
+
+````
 
 ---
 
 ## 🧪 Usage
 
-To initialize a project:
+### ✅ Step-by-step
 
 ```bash
-dart run bin/raw_cli_dart.dart init my_app
-During setup, it will ask:
-🎨 Primary Color Hex
-(Default: 0xFF2196F3)
+# Activate globally
+dart pub global activate raunak_cli
 
-🌐 Network Client
-dio / http / none
+# Create a new clean Flutter project
+raunak init my_app
+````
 
-📦 Default Dependencies
-These dependencies are automatically added:
+### During Setup:
 
+* 🎨 Enter Primary Color Hex (e.g. `0xFF4CAF50`)
+* 🌐 Choose Network Client: `dio`, `http`, or `none`
+
+### 📦 Default Dependencies Added
+
+```yaml
 dependencies:
   dio: any
   google_fonts: any
   flutter_dotenv: any
   flutter_secure_storage: any
   go_router: any
-Additional user-defined dependencies will also be appended if provided.
+```
 
-🧩 Coming Soon
-generate:feature <name> – Create a new feature module with all 3 layers.
-
-generate:model <name> – Scaffold domain entity and model files.
-
-init --with-auth – Add secure login/signup module.
-
-init --with-supabase – Backend-as-a-Service bootstrapping.
-
-👨‍💻 Author
-Made with ❤️ by Raunak Pandey
-
-Feel free to star 🌟 and contribute on GitHub
-
-📄 License
-MIT – Free to use, extend, and contribute.
+You can also input additional dependencies during setup.
 
 ---
+
+## 🧩 Coming Soon
+
+* `generate:feature <name>` – Create a feature module (Domain, Data, and Presentation layers)
+* `generate:model <name>` – Scaffold domain entities and data models
+* `init --with-auth` – Bootstrap login/signup and auth flow
+* `init --with-supabase` – Setup Supabase backend integration
+
+---
+
+## 👨‍💻 Author
+
+Made with ❤️ by **Raunak Pandey**
+GitHub: [@raunak-dows17](https://github.com/raunak-dows17)
+
+If you like this tool, don't forget to ⭐️ the repo and share it with your Flutter friends!
+
+---
+
