@@ -1,19 +1,19 @@
 import 'dart:io';
 import 'package:path/path.dart' as p;
-import 'package:raw_cli/templates/api_client_template.dart';
-import 'package:raw_cli/templates/api_endpoints_template.dart';
-import 'package:raw_cli/templates/api_entity_template.dart';
-import 'package:raw_cli/templates/api_response_template.dart';
-import 'package:raw_cli/templates/app_routes_template.dart';
-import 'package:raw_cli/templates/env_config_template.dart';
-import 'package:raw_cli/templates/env_template.dart';
-import 'package:raw_cli/templates/local_storage_template.dart';
-import 'package:raw_cli/templates/main_template.dart';
-import 'package:raw_cli/templates/navigate_template.dart';
-import 'package:raw_cli/templates/test_template.dart';
-import 'package:raw_cli/templates/theme_template.dart';
-import 'package:raw_cli/templates/token_storage_template.dart';
-import 'package:raw_cli/utils/string_utils.dart';
+import 'package:raunak_cli/templates/api_client_template.dart';
+import 'package:raunak_cli/templates/api_endpoints_template.dart';
+import 'package:raunak_cli/templates/api_entity_template.dart';
+import 'package:raunak_cli/templates/api_response_template.dart';
+import 'package:raunak_cli/templates/app_routes_template.dart';
+import 'package:raunak_cli/templates/env_config_template.dart';
+import 'package:raunak_cli/templates/env_template.dart';
+import 'package:raunak_cli/templates/local_storage_template.dart';
+import 'package:raunak_cli/templates/main_template.dart';
+import 'package:raunak_cli/templates/navigate_template.dart';
+import 'package:raunak_cli/templates/test_template.dart';
+import 'package:raunak_cli/templates/theme_template.dart';
+import 'package:raunak_cli/templates/token_storage_template.dart';
+import 'package:raunak_cli/utils/string_utils.dart';
 
 Future<void> init(String projectName, List<String> dependencies) async {
   print('🎉 Initializing project: $projectName');

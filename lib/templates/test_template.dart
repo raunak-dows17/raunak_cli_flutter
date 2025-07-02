@@ -1,4 +1,4 @@
-import 'package:raw_cli/utils/string_utils.dart';
+import 'package:raunak_cli/utils/string_utils.dart';
 
 String testTemplate(String projectName) => '''
 import 'package:flutter_test/flutter_test.dart';

@@ -5,6 +5,9 @@ A powerful CLI tool to scaffold production-ready **Clean Architecture** Flutter 
 ---
 
 ## 🚀 Features
+- `dart pub global activate raunak_cli`:
+    - Activate me globally
+
 
 - `dart run raw_cli_dart.dart init <project_name>`:
     - Creates a Flutter project with `flutter create`
@@ -69,9 +72,3 @@ Feel free to star 🌟 and contribute on GitHub
 MIT – Free to use, extend, and contribute.
 
 ---
-
-Let me know if you'd like:
-
-- A **LinkedIn post** to promote this
-- A **sample project** to showcase generated output
-- Help publishing this as a Dart package (`pub.dev`)

@@ -1,7 +1,7 @@
 import 'dart:io';
 
 import 'package:args/args.dart';
-import 'package:raw_cli/commands/init.dart';
+import 'package:raunak_cli/commands/init.dart';
 
 void run (List<String> args) {
   final parser =ArgParser();
@@ -42,6 +42,6 @@ void run (List<String> args) {
 
 void _showHelp(ArgParser parser) {
   stdout.writeln('🧠 Usage:');
-  stdout.writeln('dart run bin/raw_cli_dart.dart <command>');
+  stdout.writeln('dart run bin/raunak_cli_dart.dart <command>');
   stdout.writeln(parser.usage);
 }

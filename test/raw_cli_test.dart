@@ -1,5 +1,5 @@
 import 'package:args/args.dart';
-import 'package:raw_cli/raw_cli.dart';
+import 'package:raunak_cli/raw_cli.dart';
 import 'package:test/test.dart';
 
 void main() {
